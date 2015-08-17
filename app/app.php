@@ -6,9 +6,9 @@
 
     $server = 'mysql:host=localhost;dbname=to_do';
     $username = 'root';
-    $password = 'root';
+    $password = '';
     $DB = new PDO($server, $username, $password);
-    
+
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
         'twig.path' => __DIR__.'/../views'
     ));
